@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   You will come up with meaningful lyrics about "${bio}" in the style of "${vibe}".
   Use codes of freestyle rap.
   Use multisyllabic rhymes.
-  Use "${bio}" at the end of the sentence to rhyme with.
+  The first rhyme has to be about "${vibe}".
   Limit results to 4 sentences.`;
 
   const generateBio = async (e: any) => {
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
           <textarea
             value={bio}
             onChange={(e) => setBio(e.target.value)}
-            rows={1}
+            rows={2}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
               "e.g. Flabbergasted, New York City etc."
