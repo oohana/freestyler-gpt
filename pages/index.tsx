@@ -151,7 +151,7 @@ const Home: NextPage = () => {
                   className="sm:text-2xl text-3xl font-bold text-slate-900 mx-auto"
                   ref={bioRef}
                 >
-                  Hey yo listen, it's {vibe}!
+                  Hey yo listen, it's {vibe} off the top Freestyle!
                 </h2>
               </div>
               <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
