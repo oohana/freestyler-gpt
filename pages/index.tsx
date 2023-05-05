@@ -122,18 +122,18 @@ const Home: NextPage = () => {
 
           {!loading && (
             <button
-              className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
+              className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full hover:bg-amber-600"
               onClick={(e) => generateBio(e)}
             >
-              You ready? Let's get it &rarr;
+              You ready? Let's drop bars &rarr;
             </button>
           )}
           {loading && (
             <button
-              className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
+              className="bg-amber-600 rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 w-full"
               disabled
             >
-              <LoadingDots color="white" style="large" />
+              Mic one two check it <LoadingDots color="white" style="large" />
             </button>
           )}
         </div>
@@ -143,7 +143,7 @@ const Home: NextPage = () => {
           toastOptions={{ duration: 2000 }}
         />
         <hr className="h-px bg-gray-700 border-1 dark:bg-gray-700" />
-        <div className="space-y-10 my-10">
+        <div className="space-y-6 my-10">
           {generatedBios && (
             <>
               <div>
@@ -151,7 +151,7 @@ const Home: NextPage = () => {
                   className="sm:text-2xl text-3xl font-bold text-slate-900 mx-auto"
                   ref={bioRef}
                 >
-                  Hey yo listen, it's {vibe} off the top Freestyle!
+                  Yo listen, it's {vibe} off the top Freestyle!
                 </h2>
               </div>
               <div className="space-y-2 flex flex-col items-center justify-center max-w-xl mx-auto">
