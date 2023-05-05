@@ -10,14 +10,14 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export type VibeType = "Eminem" | "Snoop Dogg" | "Harry Mack";
+export type VibeType = "Kendrick Lamar" | "Snoop Dogg" | "Eminem" | "2pac" | "Notorious BIG" | "Wu-Tang Clan" | "Harry Mack";
 
 interface DropDownProps {
   vibe: VibeType;
   setVibe: (vibe: VibeType) => void;
 }
 
-let vibes: VibeType[] = ["Eminem", "Snoop Dogg", "Harry Mack"];
+let vibes: VibeType[] = ["Kendrick Lamar", "Snoop Dogg", "Eminem", "2pac", "Notorious BIG", "Wu-Tang Clan", "Harry Mack"];
 
 export default function DropDown({ vibe, setVibe }: DropDownProps) {
   return (
