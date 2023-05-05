@@ -109,7 +109,7 @@ const Home: NextPage = () => {
             rows={1}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Flabbergasted, New York City, Something about history etc."
+              "e.g. Flabbergasted, New York City etc."
             }
           />
           <div className="flex mb-5 items-center space-x-3">
