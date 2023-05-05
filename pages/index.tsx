@@ -161,7 +161,7 @@ const Home: NextPage = () => {
                   .filter((generatedBio) => !generatedBio.includes('Chorus'))
                   .filter((generatedBio) => !generatedBio.includes(':'))
                   .filter((generatedBio) => generatedBio.split(' ').length > 2)
-                  // .slice(0, 4)
+                  .slice(0, 8)
                   .map((generatedBio) => {
                     return (
                       <div
