@@ -100,7 +100,7 @@ const Home: NextPage = () => {
                 (or leave it empty )
               </span>
               . */}
-              Throw words or topics to inspire this freestyle
+              Throw some words or topics to inspire this freestyle
             </p>
           </div>
           <textarea
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
             rows={1}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Flabbergasted, Experiement, Rainbow."
+              "e.g. Flabbergasted, New York City, Something about history etc."
             }
           />
           <div className="flex mb-5 items-center space-x-3">
@@ -154,7 +154,7 @@ const Home: NextPage = () => {
                   Hey yo listen, it's {vibe} off the top Freestyle!
                 </h2>
               </div>
-              <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
+              <div className="space-y-2 flex flex-col items-center justify-center max-w-xl mx-auto">
                 {generatedBios
                   .split("\n")
                   .filter((generatedBio) => !generatedBio.includes('Verse'))
@@ -165,10 +165,10 @@ const Home: NextPage = () => {
                   .map((generatedBio) => {
                     return (
                       <div
-                        className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
+                        className="bg-sky-300 rounded-xl  p-3 hover:bg-emerald-100 transition cursor-copy border"
                         onClick={() => {
                           navigator.clipboard.writeText(generatedBio);
-                          toast("Freestyle copied to clipboard", {
+                          toast("Freestyle bar copied to clipboard", {
                             icon: "✂️",
                           });
                         }}
